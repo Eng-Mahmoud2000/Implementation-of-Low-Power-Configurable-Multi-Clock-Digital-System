@@ -1,0 +1,99 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : UART_RX
+Version: K-2015.06
+Date   : Tue Dec 13 05:46:44 2022
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   rst_out (dont_touch)         1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_Mux_rst/U1/Y
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_FSM/current_state_reg[0]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_FSM/current_state_reg[2]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_FSM/current_state_reg[1]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_data_sampling/sampled_bit_reg/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_data_sampling/U19/A
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/bit_cnt_reg[0]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/edge_cnt_reg[3]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/bit_cnt_reg[3]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/bit_cnt_reg[2]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/bit_cnt_reg[1]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/edge_cnt_reg[0]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/edge_cnt_reg[2]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_edge_bit_counter/edge_cnt_reg[1]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[2]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[4]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[6]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[7]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[1]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[3]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[5]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_deserializer/P_DATA_reg[0]/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_parity_check/par_err_reg/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_strt_check/strt_glitch_reg/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+       PIN :   U_Stop_check/stp_err_reg/RN
+                                1.50           3.99          -2.49  (VIOLATED)
+   U_data_sampling/n19 (dont_touch)
+                                1.50           2.89          -1.39  (VIOLATED)
+       PIN :   U_data_sampling/U23/A1N
+                                1.50           2.89          -1.39  (VIOLATED)
+       PIN :   U_data_sampling/U23/B1
+                                1.50           2.89          -1.39  (VIOLATED)
+       PIN :   U_data_sampling/U3/Y
+                                1.50           2.89          -1.39  (VIOLATED)
+   U_data_sampling/n14 (dont_touch)
+                                1.50           1.80          -0.30  (VIOLATED)
+       PIN :   U_data_sampling/U28/A0N
+                                1.50           1.80          -0.30  (VIOLATED)
+       PIN :   U_data_sampling/U28/B0
+                                1.50           1.80          -0.30  (VIOLATED)
+       PIN :   U_data_sampling/U4/Y
+                                1.50           1.80          -0.30  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      3                  -4.19  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   rst_out (dont_touch)         0.37           0.83          -0.46  (VIOLATED)
+   U_data_sampling/n16 (dont_touch)
+                                0.09           0.10           0.00  (VIOLATED: increase significant digits)
+
+   -----------------------------------------------------------------
+   Total                      2                  -0.47  
+
+1
